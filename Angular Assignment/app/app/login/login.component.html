@@ -1,0 +1,9 @@
+<h3>Welcome To The Login Page</h3>
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+<input type="text" ngModel name="userId" placeholder="Enter UserId"><br><br>
+<input type="password" ngModel name="password" placeholder="Enter Password"><br><br>
+<button>LogIn</button>
+</form>
+<br>
+<br>
+<a routerLink="/register">Go To Registration Page</a>

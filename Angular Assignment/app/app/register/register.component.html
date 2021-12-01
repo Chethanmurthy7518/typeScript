@@ -1,0 +1,40 @@
+<h3>Welcome To The Registration Page</h3>
+<form #registerForm="ngForm" (ngSubmit)="register(registerForm.value)">
+    <table>
+        <tr>
+            <td>
+    <input type="text" ngModel name="userName" placeholder="Enter Your Name">
+</td>
+</tr>
+<tr>
+    <td>
+    <input type="text" ngModel name="mailId" placeholder="Enter Email">
+</td>
+</tr>
+<tr>
+    <td>
+    <input type="text" ngModel name="userId" placeholder="Enter User Id">
+</td>
+</tr>
+<tr>
+    <td>
+    <input type="password" ngModel name="password" placeholder="Create Password">
+</td>
+</tr>
+
+
+<tr>
+    <td>
+    <input type="text" ngModel name="address" placeholder="Enter Your Address">
+</td>
+</tr>
+<tr>
+    <td>
+        <button>Register</button>
+    </td>
+</tr>
+</table>
+</form>
+<br>
+<br>
+<a routerLink="/login">Go To The Login Page</a>
